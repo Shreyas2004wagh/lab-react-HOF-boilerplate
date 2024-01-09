@@ -42,33 +42,33 @@ export default class HigherOrderComponent extends React.Component {
       <>
         <h1>Display All Items</h1>
         {this.state.userData.map((el) => (
-          <div key={el.id} style={{ width: "200px", display: "flex", border: "2px solid black", justifyContent: "center", alignItems: "center", fontSize: "20px", color:"blue" }}>
+          <div key={el.id} style={{   border: "2px solid black", fontSize: "20px", color:"blue" }}>
             Id: {el.id}
-            <br />
+            
             Name: {el.name}
-            <br />
+            
             UserType: {el.user_type}
           </div>
         ))}
 
         <h1>Display Using User Type</h1>
         {this.state.filterUsingUserType.map((el) => (
-          <div key={el.id} style={{ width: "200px", display: "flex", border: "2px solid black", justifyContent: "center", alignItems: "center", fontSize: "20px" , color:"blue"}}>
+          <div key={el.id} style={{   border: "2px solid black", color:"blue"}}>
             Id: {el.id}
-            <br />
+            
             Name: {el.name}
-            <br />
+            
             UserType: {el.user_type}
           </div>
         ))}
 
         <h1>Display Using User J</h1>
         {this.state.filterUsingFirstLetter.map((el) => (
-          <div key={el.id} style={{ width: "200px", display: "flex", border: "2px solid black", justifyContent: "center", alignItems: "center", fontSize: "20px" , color:"blue"}}>
+          <div key={el.id} style={{   border: "2px solid black", color:"blue"}}>
             Id: {el.id}
-            <br />
+            
             Name: {el.name}
-            <br />
+            
             UserType: {el.user_type}
           </div>
           
@@ -76,11 +76,11 @@ export default class HigherOrderComponent extends React.Component {
 
     <h1>Display Using Age</h1>
         {this.state.filterUsingAge.map((el) => (
-          <div key={el.id} style={{ width: "200px", display: "flex", border: "2px solid black", justifyContent: "center", alignItems: "center", fontSize: "20px" , color:"blue"}}>
+          <div key={el.id} style={{   border: "2px solid black", color:"blue"}}>
             Id: {el.id}
-            <br />
+            
             Name: {el.name}
-            <br />
+            
             UserType: {el.user_type}
           </div>
           
